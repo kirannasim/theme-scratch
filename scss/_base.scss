@@ -1,0 +1,86 @@
+/* Define variables */
+$primary-color: #777;
+$subtitle-color: #444;
+$white: #fff;
+$default-padding: 6.25rem;
+$mobile-padding: 3rem;
+$default-border : 1px solid #ddd;
+$breakpoint-device : 992px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 540px;
+
+@font-face {
+  font-family: "Arvo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/Arvo-Regular.ttf"); }
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/Lato-Regular.ttf"); }
+
+@font-face {
+  font-family: "Lato-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../resources/fonts/Lato-Bold.ttf"); }
+  
+@font-face {
+  font-family: "Helvetica Neue Medium Extended";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../resources/fonts/Helvetica Neue Medium Extended.ttf"); }
+
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-family: "Arvo";
+
+    @media(max-width: $breakpoint-tablet) {
+        font-size: 2.5rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-family: "Lato-Bold";
+
+    @media(max-width: $breakpoint-tablet) {
+        font-size: 1.5rem;
+    }
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-family: "Lato-Bold";
+    color: $subtitle-color;
+
+    @media(max-width: $breakpoint-tablet) {
+        font-size: 1.2rem;
+    }
+}
+
+p {    
+    font-family: "Lato";
+    color: $primary-color;
+}
+
+.container {
+    @media (min-width: 1200px) {
+        max-width: 960px;
+        padding: 0;
+    }
+}
+
+/* Define Css in Full-width case */
+.full-width {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%,0);
+}
